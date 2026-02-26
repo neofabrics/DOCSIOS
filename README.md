@@ -6,9 +6,10 @@ It focuses on mobile usability and quick access to DOCSIS connection metrics gen
 
 This repository is used for:
 
-- 🐞 Bug reports  
-- 💡 Feature requests  
-- 🧪 TestFlight beta feedback  
+- 🐞 Bug reports
+- 💡 Feature requests
+- 🧪 TestFlight beta feedback
+- 📜 Release history (see [CHANGELOG.md](CHANGELOG.md))
 
 The source code is not public at this time.
 
@@ -16,16 +17,16 @@ The source code is not public at this time.
 
 ## Scope
 
-DOCSIOS is a mobile companion app.  
+DOCSIOS is a mobile companion app.
 It does not replace or modify DOCSight.
 
 DOCSIOS visualizes metrics produced by DOCSight and does not collect modem data directly.
 
 This repository does **not** cover:
 
-- DOCSight backend  
-- DOCSight web interface  
-- Metric collection or processing logic  
+- DOCSight backend
+- DOCSight web interface
+- Metric collection or processing logic
 
 For issues related to DOCSight itself, please refer to the official DOCSight repository:
 https://github.com/itsDNNS/docsight
@@ -44,5 +45,5 @@ Please do not open DOCSight issues for DOCSIOS-related topics.
 
 ## Status
 
-Early beta.  
+Early beta.
 Expect iteration and UI refinements.
