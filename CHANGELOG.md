@@ -2,6 +2,19 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 12) - 2026-02-26
+### Improved
+- Refined Dashboard readability in expanded Affected Channels rows with clearer direction highlighting (DS in blue, US in purple) and a neutral separator.
+- Updated Help screen presentation with app branding and a cleaner support/feedback entry point.
+- Improved setup onboarding visuals by replacing the connector symbol with the app logo.
+
+### Added
+- Added a smoother and more reliable splash fade-out handoff.
+
+### Fixed
+- Fixed tap targets for setup primary actions (Connect / Authenticate) so the full button area is tappable.
+- Fixed modulation improvement highlighting in Events/Related Events by switching to blue for better visual semantics.
+
 ## 0.1 (Build 11) - 2026-02-26
 ### Improved
 - Refined the Dashboard with cleaner, more scannable cards and better interaction behavior.
