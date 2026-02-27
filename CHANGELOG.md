@@ -2,6 +2,35 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 14) - 2026-02-27
+
+> [!NOTE]  
+> I had to skip Build 13 because I needed to add an App Store Connect–related change.
+
+### Improved
+- Improved dashboard loading UX with smooth card insert animations (fade + slight top-slide + spring reflow), so cards no longer pop in.
+- Improved backend compatibility messaging in Dashboard with clearer update-required presentation.
+- Improved Connection card behavior by making expansion conditional on available device details.
+
+### Added
+- Added adoption of new DOCSight summary payload in `GET /api/channels`:
+  - `summary.health`
+  - `summary.ds_power_avg`
+  - `summary.ds_snr_min`
+  - `summary.ds_snr_avg`
+  - `summary.us_power_avg`
+  - `summary.ds_correctable_errors`
+  - `summary.ds_uncorrectable_errors`
+  - `summary.us_capacity_mbps`
+- Added `GET /health` version usage in app (DOCSight Version in Settings + dashboard compatibility check).
+- Added version-based backend requirement check against `v2026-02-27.1`.
+- Added `GET /api/device` integration with new DeviceInfo model and expandable modem details in the Dashboard Connection card (manufacturer, model, firmware, uptime).
+- Added EN/DE localization for the new backend/version/device UI strings.
+
+### Fixed
+- Replaced remaining manual client-side derivations with backend-provided summary values in Dashboard and Gaming paths.
+- Updated Signal Health issue mapping to current backend issue keys (new code set), preventing raw technical keys from appearing in UI.
+
 ## 0.1 (Build 12) - 2026-02-26
 ### Improved
 - Refined Dashboard readability in expanded Affected Channels rows with clearer direction highlighting (DS in blue, US in purple) and a neutral separator.
