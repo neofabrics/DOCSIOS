@@ -2,6 +2,27 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 16) - 2026-02-27
+
+### Improved
+- Default Event Filtering — "Monitoring Started" events are now hidden by default in Timeline.
+- Toolbar UX — Unified filter interactions across Events View and Timeline View using consistent menus and icon logic.
+- "Mark All Read" Logic — Standardized the button to be always visible but disabled if no unacknowledged events exist, ensuring it correctly accounts for filtered entries.
+
+### Added
+
+- Complaint Workflow — New dedicated section for generating ISP complaint letters. Choose the time period, language, and enter your customer details — the app generates a ready-to-send letter that can be exported as a PDF or shared directly via the DOCSight API.
+- Speedtest Quality Indicators — Download and upload speeds are now color-coded based on your booked bandwidth, making it easy to spot underperforming results at a glance. The color indicators appear in the speedtest list, on the dashboard, and in the detail view.
+- Speed Health in Speedtest Details — The detail view for a speedtest result now shows an overall Speed Health rating (Good / Warning / Poor) at the top.
+- Temperature overlay in Trends and Timeline charts — a subtle dashed orange line showing temperature alongside signal quality, normalized to
+each chart's scale
+  - The overlay only appears if weather integration is enabled in DOCSight
+  - **Requires minimum version v2026-02-27.3 of DOCSight**
+- App Icon Badges — Implemented local synchronization of the home screen badge count to reflect unacknowledged events. (requires Push Notification permissions)
+- iPad Optimization — Refactored Channels View to a NavigationSplitView layout for a native sidebar experience.
+- Direction Toggle — Added a segmented picker to Channels View (DS/US) to easily navigate long channel lists.
+- Active Filter Indicators — Added blue dot badges to toolbar icons to signal when a filter is actively hiding data (e.g., hidden monitoring events).
+
 ## 0.1 (Build 14) - 2026-02-27
 
 > [!NOTE]  
