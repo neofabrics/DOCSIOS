@@ -2,6 +2,25 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 17) - 2026-03-01
+
+### Improved
+- Row Styling Alignment — Harmonized the visual design of Timeline rows and Event rows to ensure a consistent look and feel across different modules.
+- Smart Tooltips — Enhanced tooltips to dynamically filter content based on visible chart series and corrected the display order.
+- Component Reusability — Streamlined the codebase by removing legacy chart implementations in favor of the centralized chart component.
+- Data Models — Updated BNetzMeasurement and CorrelationEntry to support the expanded metrics and improved chart requirements.
+
+### Added
+- Global Chart Unification — Successfully migrated all feature-specific charts (Speedtest, Broadband, Channel Details, Trends, and Correlation) to the new global DsChartCard component for a consistent UI/UX.
+- Interactive Chart Legends — Users can now toggle the visibility of individual metrics by tapping legend items.
+- Full-Screen Landscape Mode — Added a dedicated toggle to expand any chart into a high-detail landscape view.
+- Individual Metric Scaling — Implemented normalization logic (matching the web backend) to display SNR, Power, and Errors optimally within the same chart.
+- Enhanced Signal Metrics — Added Upstream Power (US), Correctable, and Uncorrectable errors to the Signal Correlation timeline.
+
+### Fixed
+- Navigation Stability — Resolved the critical "view jumping" issue on iPhone Pro Max models during orientation changes by stabilizing the NavigationStack hierarchy.
+- Navigation bar titles now appear correctly for tabs in the "More" section, including in German
+
 ## 0.1 (Build 16) - 2026-02-27
 
 ### Improved
