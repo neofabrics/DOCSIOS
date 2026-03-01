@@ -2,6 +2,37 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 18) - 2026-03-01
+
+### Improved
+
+- Correlation chart – Line styles now match the web UI — thinner solid lines (SNR purple, DS Power pink, US Power
+amber); uncorrectable errors rendered as bars in the bottom 20% of the chart
+- Threshold fit button – Added "Fit" toggle button to charts; threshold lines outside the visible range are filtered
+out when fit mode is off
+- Weather overlay – Padding above and below the temperature line (15%) keeps it from touching the chart edges
+- Dashboard – Channels card – Renamed from "Affected Channels" to "Channels"; icon updated to reflect the broader scope
+- Trends – Errors chart uses a dedicated bar chart component; threshold reference lines added to all signal charts
+
+### Added
+- Correlation chart – Event markers (triangles) from the timeline displayed directly in the chart, color-coded by
+severity; event label and message visible in the scrub tooltip
+- Correlation chart – Fullscreen mode now includes a time range picker to switch periods without closing the chart
+- Charts in trends and channel details – Now containing optional thresholds, can be enabled and disabled by the user per chart including optional fit to zoom
+- Trends charts – Fullscreen mode now includes a range picker (Day / Week / Month)
+- Channel Detail – Added 3-day option to the time range picker
+- Chart defaults – New "Chart Defaults" section in Settings to configure default visibility of threshold lines,
+threshold labels, and fit-to-thresholds behavior
+- Dashboard – Signal Summary – DS/US power and SNR values are now color-coded (green / orange / red) based on signal
+health, with the measured min–max range shown as a subtle hint
+- Dashboard – Channels card – Header now shows the percentage of healthy DS and US channels (e.g. ↓ 85% ↑ 100% healthy)
+
+### Fixed
+
+- ChannelDetailView – No longer inherits pull-to-refresh when opened as a sheet from the Correlation view
+- Correlation view – Section header renamed from "Timeline" to "Events" for clearer wording
+- Dashboard – Signal card – Downstream and Upstream columns are now always equal height
+
 ## 0.1 (Build 17) - 2026-03-01
 
 ### Improved
