@@ -2,6 +2,21 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 19) - 2026-03-01
+
+### Improved
+
+- Uncorrectable error percentage shown in Signal card header (instead of raw count)
+- Spike suppression indicator — when the backend suppresses a one-time error spike, the Signal card shows "One-time error spike"
+
+### Added
+
+- Modulation history chart in Channel Detail — stepped line showing QAM modulation changes over time, with fullscreen support
+
+### Fixed
+
+- Fullscreen rotation loop — chart no longer oscillates between portrait and landscape after manually returning to portrait
+
 ## 0.1 (Build 18) - 2026-03-01
 
 ### Improved
