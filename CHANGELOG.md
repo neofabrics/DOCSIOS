@@ -2,7 +2,32 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
-## 0.1 (Build 19) - 2026-03-01
+## 0.1 (Build 20) - 2026-03-03
+
+### Improved
+
+- Dashboard visual hierarchy — Gaming tab removed from tab bar; GamingScoreCard now opens GamingView as a sheet for a cleaner tab structure
+- HealthSummaryCard slimmed down
+- ChannelsCard now shows DS/US channel counts directly in the header alongside health percentages
+- Operational events filter extended to cover both monitoring_started and monitoring_stopped; filter state persisted via @AppStorage and shared between EventsView and Correlation View
+- Timeline tab renamed to "Correlation" / "Korrelation"; filter icon shows filled badge when operational events are hidden
+- monitoring_started message now shows health state ("Health: Marginal") instead of repeating the title
+
+### Added
+
+- **New Feature: Channel Compare** — compare up to 6 DS or US channels side by side with Power and SNR charts, signal quality thresholds, scrubbing tooltips showing all channels simultaneously, and a fullscreen mode with period controls
+  - Just tap the chart button in the Channel Detail View on the top right to open the Channel Compare feature
+- Rich localized event details in EventsView and the Correlation timeline — human-readable, fully localized descriptions per event type instead of raw backend messages
+- Localized event messages in Dashboard's RecentEventsCard (all event types covered)
+- Localized correlation chart tooltips with compact modulation format ("DS 42 ▼2, US 7 ▲1")
+
+### Fixed
+
+- showPoints parameter in DsChartCard was declared but never wired up — data points now render correctly; Speedtest series in CorrelationView also
+gains point markers
+- Modulation event cards: multi-channel events no longer have a tap target on the whole card — each channel sub-row is independently tappable
+
+## 0.1 (Build 19) - 2026-03-02
 
 ### Improved
 
