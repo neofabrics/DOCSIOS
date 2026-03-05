@@ -2,6 +2,14 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 20.0.1) - 2026-03-05
+
+### Fixed
+
+- Fixed a stale app icon badge incorrectly showing unread events
+- Fixed channel comparison not working when opened from the Dashboard
+- Complaint View now correctly auto-detects all 4 supported languages based on device language settings
+
 ## 0.1 (Build 20) - 2026-03-03
 
 ### Improved
