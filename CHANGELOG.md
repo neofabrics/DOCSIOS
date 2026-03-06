@@ -2,6 +2,14 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 21) - 2026-03-06
+
+### Added
+- Tolerated health status — new intermediate signal state between Good and Marginal, shown consistently across all views
+
+### Improved
+- Correlation chart: health bands now have a saturated color strip along the top edge for clearer boundaries
+
 ## 0.1 (Build 20.0.1) - 2026-03-05
 
 ### Fixed
