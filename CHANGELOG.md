@@ -2,6 +2,26 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 22.0.2) - 2026-03-07
+
+> [!NOTE]  
+> Build 22.0.2 is compatible with older DOCSight versions but requires at least `v2026-03-06.3` for the Modulation feature. Older versions will show a banner prompting to update DOCSight.
+
+### Added
+
+- Support for DOCSight's new Modulation feature — new full tab with distribution overview and intraday detail sheet (requires at least DOCSight `v2026-03-06.3`)
+- Centralized OSLog-based error logging — unified logging via Apple's OSLog framework; logs remain on-device and are never transmitted
+- AsyncState<T> + LoadingContainer — refactored boilerplate for async data loading
+
+### Improved
+
+- Reload animation — scroll-to-top + opacity dimming on filter/direction change in Modulation, Trends, Speedtest, Correlation and Dashboard; 0.8s artificial delay removed everywhere
+- URLComponents — replaced string-interpolated query params with proper URLComponents
+
+### Fixed
+
+- Fullscreen image viewer — black screen on open prevented
+
 ## 0.1 (Build 21) - 2026-03-06
 
 ### Added
