@@ -2,6 +2,29 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 23) - 2026-03-08
+
+### Added
+- **Insights Tab** — on-device statistical analysis of historical modem data, no ML required:
+  - *Prime-Time Degradation* — detects if your SNR regularly drops during specific evening hours
+  - *Temperature Correlation* — checks whether high outside temperatures correlate with SNR loss
+  - *Uncorrectable Error Trend* — alerts if uncorrectable errors have significantly increased week-over-week
+  - *Channel Instability* — flags individual channels that changed modulation unusually often in the last 24h
+- **Background Polling & Local Notifications** — the app can now check your DOCSight metrics in the background and notify you without being open:
+  - New Events, Signal Health Changes, Speed Anomalies (each independently toggleable in settings)
+  - Single-event notifications show the actual event message instead of just a count
+  - Polling interval follows what's configured in your DOCSight backend — no unnecessary extra requests
+- **Live Activity & Dynamic Island** — monitor modem health live from Lock Screen or Dynamic Island:
+  - Compact: health dot + current SNR
+  - Expanded: health status, SNR Avg, degraded channel count, uncorrectable errors
+  - Lock Screen: 2×2 metric grid (SNR Min | SNR Avg / Uncorr. Errors | Degraded)
+  - Starts automatically when a background check detects degradation
+    - Can also be started manually in the Dashboard
+  - Stops automatically on recovery or after 60 minutes
+  - Shield badge when the backend is actively suppressing a known error spike
+  - Live Activity polling follows the DOCSight backend's configured polling interval instead of a fixed interval
+- **Temperature Overlay in Channel Detail Charts** — Power and SNR charts in channel detail view now show the outside temperature overlay if enabled, consistent with Trends and Correlation views
+
 ## 0.1 (Build 22.0.2) - 2026-03-07
 
 > [!NOTE]  
