@@ -2,6 +2,28 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 24) - 2026-03-12
+
+### Added
+
+- Apple Watch app — native watchOS companion with Signal, Gaming, Speedtest, and Events pages; data is fetched directly from the backend via credentials synced from the iPhone app
+- Watch complication & Smart Stack — health status complication for watch faces; rectangular Smart Stack widget showing health, gaming score, latest speedtest, and SNR
+- Connection Monitor — new tab with a multi-target latency chart, P95/avg/min/max stats, packet loss, per-target detail rows, and a dashboard summary card
+- Notification severity filter — choose which severity levels (critical, warning, info) trigger background push notifications; filter applies to both banners and the notification badge count
+- Localized notifications — background event notifications are fully localized (EN/DE) and include a "Mark as Read" action
+
+### Improved
+
+- Image viewer (Smokeping, BQM) redesigned close button; swipe-to-dismiss added
+
+### Fixed
+
+- Modulation Detail Sheet prev/next buttons no longer drop taps during loading
+- Live Activity not triggered when health changes to "marginal"
+- Pull-to-refresh cancellation no longer incorrectly triggers the offline banner
+- Notification fallback correctly shows "New Event" when the event payload can't be fetched
+- Modulation View no longer shows a double navigation bar
+
 ## 0.1 (Build 23) - 2026-03-08
 
 ### Added
