@@ -2,6 +2,24 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 25) - 2026-03-16
+
+### Added
+
+- Watch Dashboard — new glance-view page showing channel health (DS/US % healthy), uncorrectable error rate, BNetz broadband measurement, Connection Monitor latency/packet loss, collector status, and last modem poll
+- Watch Complication: Health Gauge — new accessoryCircular complication showing signal health state as a color-coded gauge ring with short label
+- Watch Complication: SNR Gauge — SNR level shown as a gauge ring, replacing the previous dot indicator
+- Watch Page Order — configurable page order from iOS Settings, synced to the Watch via WatchConnectivity
+- Comparison Tab — compare signal quality across two custom time periods side by side, with threshold overlays
+- Signal Insights — diagnostic cards for backend health issues, accessible as a sheet from the Health Summary card
+- Notifications — individual per-event notifications with timestamps, capped at 5
+
+### Improved
+
+- Connection Monitor card header shows average ping at a glance
+- Watch Events: tap-to-confirm replaces swipe-to-acknowledge (avoids conflict with page-swipe gesture)
+- Channel comparison limit raised to 64 with Select All option
+
 ## 0.1 (Build 24) - 2026-03-12
 
 ### Added
