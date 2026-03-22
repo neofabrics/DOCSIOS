@@ -2,6 +2,28 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 26.0.10) - 2026-03-22
+
+### Added
+
+- Trigger new speedtest directly from the Speedtest tab (with start/done banners and haptic feedback)
+- Traceroute support in Connection Monitor
+- App Intents support — Early Beta
+- Notifications are cleared when acknowledged events are dismissed in iOS or watchOS
+- watchOS: completely redesigned as a real companion app — all views rebuilt with a consistent card-based layout. The Dashboard, Monitor, and Trends pages are all new.
+- watchOS: range picker (24h / 7d / 30d) on Trends page
+- watchOS: speedtest history and timestamps on detail pages
+- watchOS: skeleton loader for Events sheet
+- watchOS: configurable dashboard card order via iOS Settings
+
+### Improved
+
+- watchOS: data reloads on Events sheet dismiss without triggering an unnecessary modem poll
+
+### Fixed
+
+- Events: app icon badge cleared when events are acknowledged
+
 ## 0.1 (Build 25) - 2026-03-16
 
 ### Added
