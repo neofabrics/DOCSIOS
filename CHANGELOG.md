@@ -2,6 +2,18 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 26.1.1) - 2026-03-23
+
+### Added
+- Signal Summary card now shows ⓘ buttons next to each metric (DS Power, Signal Clarity/SNR, US Power, Errors) — tapping opens a popover anchored to the icon with a brief explanation, matching the web UI's glossary tooltips
+- Packet loss warning notifications are now configurable via a dedicated toggle in Settings → Notifications
+
+### Improved
+- Glass cards now correctly re-render when switching Light/Dark Mode while the app is in the background (iOS 26 glassEffect was not tracking color scheme changes)
+
+### Fixed
+- Channel picker: selecting/deselecting channels no longer produces duplicates or stale checkmarks (stale closure bug)
+
 ## 0.1 (Build 26.0.10) - 2026-03-22
 
 ### Added
