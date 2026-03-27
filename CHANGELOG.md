@@ -2,6 +2,12 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 26.1.1) - 2026-03-27
+
+### Added
+
+- Segment Utilization: DOCSight's segment utilization data is now surfaced in the app, showing downstream and upstream utilization over time with min/avg/max stats.
+
 ## 0.1 (Build 26.1.1) - 2026-03-23
 
 ### Added
