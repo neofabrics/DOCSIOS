@@ -2,6 +2,12 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 0.1 (Build 80) - 2026-04-04
+
+### Improved
+
+Snapshot heatmap health requests are now serialised and debounced — previously multiple visible days would load in parallel causing request bursts; fixes CrowdSec bans when accessing remotely e.g. via Pangolin/Traefik.
+
 ## 0.1 (Build 79) - 2026-04-04
 
 Note: Build numbers are now assigned automatically by Xcode Cloud and increment continuously — this is why the jump from build 27 to 79 is larger than usual.
