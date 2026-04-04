@@ -2,7 +2,42 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
-## 0.1 (Build 26.1.1) - 2026-03-27
+## 0.1 (Build 79) - 2026-04-04
+
+Note: Build numbers are now assigned automatically by Xcode Cloud and increment continuously — this is why the jump from build 27 to 79 is larger than usual.
+
+### Added
+
+- Snapshots tab — browse and compare historical modem snapshots with a 24-hour heatmap timeline, health indicators, and scrub tooltip
+- Outage timeline in Monitor View showing past outage periods at a glance
+- Offline caching for Trends, Speedtest, Broadband, and Modulation — data stays visible when the backend is unreachable
+- BQM chart — interactive latency history with lost polls visualization, matching the web UI
+- Apple Watch: Segment Utilization card and detail page
+- Apple Watch: Monitor page now shows latency and packet loss charts
+- Apple Watch: Channel detail for flagged channels with signal metrics and health indicators
+- Apple Watch: Speedtest trigger in the Speed page with live status feedback
+- Apple Watch: Manual refresh button on the Channels and Channel Detail pages
+
+### Improved
+
+- App and Watch data loads faster due to parallel API requests
+- Channel detail loads signal history, thresholds, and weather simultaneously
+- Chart scrubbing feels smoother with less work done per touch event
+- Apple Watch skips a refresh on wrist-raise if the data was fetched recently
+- Reduced memory usage in the image cache
+
+### Fixed
+
+- Modulation health trend chart now correctly shows a 0–100% scale
+- Offline banner displayed with correct width in Channels view; duplicate removed from Events view
+- Apple Watch: base URL is validated before attempting a connection
+- Apple Watch: credentials are properly cleared when resetting the app
+- Apple Watch: dashboard card order is correctly synced from the iPhone
+- Pasting a URL no longer triggers the iOS clipboard access banner
+- Incident PDF reports are cleaned up from storage after sharing
+- Various security improvements around credential storage and data protection
+
+## 0.1 (Build 27) - 2026-03-27
 
 ### Added
 
