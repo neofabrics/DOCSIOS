@@ -2,6 +2,10 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 1.0 (Build 1) - 2026-04-06
+
+Initial App Store Release 🎉 Contains no changes since 0.1 (Build 80)
+
 ## 0.1 (Build 80) - 2026-04-04
 
 ### Improved
