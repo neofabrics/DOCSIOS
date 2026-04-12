@@ -2,6 +2,27 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 1.1 (Build 93) - 2026-04-12
+
+### iOS
+
+#### Added
+- Refine home screen widgets with improved layout and refresh button
+- Add hide/show toggle for bar chart series in error trends chart
+- Add severity threshold selection for live activity auto-start
+- Clear notifications, badge, and Live Activity on logout
+- Add confirmation dialog before marking all events as read
+
+#### Fixed
+- Localize connection monitor events in correlation chart tooltip
+
+### Apple Watch
+
+#### Added
+- Add watch dashboard card configuration with hide/show toggle and iPhone sync
+- Add thresholds to watch connection monitor and hide raw resolution badge
+- Update bell badge instantly when events are acknowledged on Watch
+
 ## 1.0 (Build 1) - 2026-04-06
 
 Initial App Store Release 🎉 Contains no changes since 0.1 (Build 80)
