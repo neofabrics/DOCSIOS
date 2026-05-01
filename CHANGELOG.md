@@ -2,6 +2,84 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 1.2 (Build 120) - 2026-05-08
+
+### Notifications & Background Refresh
+
+- Added configurable event notifications by event type and severity.
+- Added configurable background refresh requests for local notification checks.
+- Added clearer background check status information.
+- Improved local notification handling for DOCSight events.
+- Preserved compatibility with existing notification settings from earlier app versions.
+
+### Diagnostics
+
+- Added local app diagnostics logging.
+- Added exportable diagnostic reports including app logs and MetricKit data.
+- Added diagnostic log filtering.
+- Added clearer controls for diagnostics collection.
+- Added app distribution information to diagnostic exports.
+- Added stronger redaction for sensitive diagnostic values.
+- Moved diagnostics into a dedicated Settings sheet.
+
+### Events & Monitoring
+
+- Added segment utilization events.
+- Added day grouping for the Events timeline.
+- Added richer device event filters and event details.
+- Added SNR affected channel context to event details.
+- Added better handling for unsupported DOCSIS error counters.
+- Improved event labels, localization, and detail formatting.
+- Fixed Channel Compare selection.
+
+### Dashboard & Refresh Behavior
+
+- Improved Dashboard pull-to-refresh behavior and loading feedback.
+- Improved modem poll state handling.
+- Improved connection info readability.
+- Improved affected-channel and signal summary presentation.
+- Added clearer last-updated feedback while pulling to refresh across data views.
+- Removed redundant refresh timestamp footers.
+- Further refined Dashboard card layout, connection info readability, and status presentation.
+
+### Settings & User Experience
+
+- Reworked the Settings screen structure.
+- Added confirmation dialogs for logout actions.
+- Improved custom Settings row interaction behavior.
+- Added clearer and more compact background refresh settings.
+- Improved Apple Watch settings visibility when no watch is paired.
+- Improved diagnostics settings clarity.
+
+### Snapshots
+
+- Improved snapshot timeline loading stability.
+- Improved snapshot list and detail behavior.
+
+### Security & Reliability
+
+- Hardened API URL handling.
+- Improved Keychain token storage behavior.
+- Improved local cache cleanup after logout or authentication failure.
+- Added safer handling for temporary exported files.
+- Improved handling of unauthenticated backend setups.
+- Improved app state refresh behavior for diagnostics and status indicators.
+- Improved StoreKit app transaction handling.
+
+### Apple Watch & Widgets
+
+- Improved Apple Watch support for local HTTP backends.
+- Improved Watch data synchronization.
+- Improved Watch dashboard and settings behavior.
+- Improved widget data fetching behavior.
+- Refined Apple Watch typography and dashboard presentation.
+
+### Charts & Data Presentation
+
+- Improved SNR-related chart and event formatting.
+- Improved presentation of unavailable or unsupported signal/error metrics.
+- Improved event-derived tooltip and detail formatting.
+
 ## 1.1 (Build 93) - 2026-04-12
 
 ### iOS
