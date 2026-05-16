@@ -2,6 +2,67 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
+## 1.3 (Build 147) - 2026-05-16
+
+> [!NOTE]  
+> TestFlight Release: 2026-05-16
+>
+> App Store Release: tbd
+
+### Apple Watch
+
+- Added a new health-first Apple Watch dashboard.
+- Added problem-focused dashboard summaries and signal-first presentation.
+- Added optional problem-first dashboard sorting.
+- Added chart legends for multi-line watchOS charts.
+- Added Digital Crown chart inspection for supported Apple Watch charts.
+- Added grouped event days on Apple Watch.
+- Added manual modem polling from Apple Watch.
+- Improved Segment Utilization presentation for the small screen.
+- Improved Apple Watch chart rendering performance and reduced render pressure.
+- Improved Apple Watch startup, sync, background refresh, and diagnostic log behavior.
+
+### iPhone and iPad
+
+- Improved DOCSight event metadata presentation.
+- Added richer SNR affected-channel rows with channel, frequency, SNR, delta, and metadata context.
+- Added improved modulation metadata presentation.
+- Improved affected-channel subtitles and dashboard channel row readability.
+- Refined the iPad dashboard layout with tighter card columns and better use of available space.
+- Improved handling for filtered unread events.
+
+### Notifications and Deep Links
+
+- Notifications can now open more directly into the relevant DOCSIOS context where available.
+- Added contextual routing for event, speedtest, monitor, and channel-related destinations.
+- Improved deep-link handling across app sections and detail views.
+
+### Charts and Performance
+
+- Improved chart rendering with explicit point budgets and downsampling.
+- Improved performance for large chart and trend datasets.
+- Moved large API response decoding off the main path for better responsiveness.
+- Improved chart stability around threshold lines, weather overlays, monitor data, correlation data, BQM, trends, and Channel Compare.
+
+### Reliability and Setup
+
+- Improved manual modem polling states, including loading, cooldown, completion, and visible timestamp updates.
+- Improved optional dashboard loading behavior and Connection Monitor summary fallback handling.
+- Improved widget behavior around configured metrics and optional fetching.
+- Improved offline cache behavior for dashboard and events.
+- Added clearer backend URL handling, including warnings for plain HTTP backend URLs.
+- Added stricter authenticated API URL validation.
+- Improved journal setup behavior.
+- Removed the hidden Apple Intelligence / Foundation Models analysis experiment.
+
+### Testing and Release Workflow
+
+- Expanded deterministic UI test coverage across dashboard, events, channels, monitor, export, settings, onboarding, widgets, offline cache, and deep links.
+- Added App Store screenshot automation for iPhone, iPad, and Apple Watch using deterministic English mock data.
+- Improved UI test stability, launch speed, and mock backend structure.
+- Added dedicated Apple Watch UI regression coverage.
+- Documented the release and changelog workflow.
+
 ## 1.2 (Build 120) - 2026-05-08
 
 ### Notifications & Background Refresh
