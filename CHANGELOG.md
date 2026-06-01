@@ -2,12 +2,150 @@
 
 All notable changes to DOCSIOS will be documented in this file.
 
-## 1.3 (Build 147) - 2026-05-16
+## 1.4 (Build 196) - 2026-06-01
 
-> [!NOTE]  
-> TestFlight Release: 2026-05-16
->
-> App Store Release: tbd
+DOCSIOS 1.4 is a major dashboard, navigation, widget, and watchOS update focused on the newer DOCSight signal-family data model.
+
+> Important: Full functionality requires DOCSight backend v2026-05-27.1 or newer. Older backend versions do not provide all signal-family metrics required by the new Dashboard cards and family-based trend views.
+
+### Dashboard
+
+- Rebuilt the Home Dashboard around a clearer signal-health overview and the newer DOCSight signal-family metrics.
+- Added richer KPI cards for downstream and upstream signal families:
+  - Downstream SC-QAM power
+  - Downstream OFDM power
+  - Downstream SC-QAM SNR
+  - Downstream OFDM MER
+  - Upstream SC-QAM power
+  - Upstream OFDMA power
+  - Uncorrectable errors
+- Added family-level health summaries for SC-QAM, OFDM, and OFDMA signal groups.
+- Added mini charts, observed ranges, health-aware range bars, and focused status indicators to Dashboard signal cards.
+- Added focused detail sheets from Dashboard cards for:
+  - Trends
+  - Channels
+  - Modulation
+  - Events
+  - DOCSight collectors
+  - Speed tests
+  - Connection monitor data
+- Added a DOCSight collectors detail sheet with clearer collector/modem poll status.
+- Improved recent event handling with Dashboard badge support and updated acknowledgement behavior.
+- Added configurable Dashboard appearance options, including:
+  - visual intensity
+  - detail level
+  - range bars
+  - mini charts
+  - problem-focused behavior
+  - configurable last-seen mini-chart marker
+- Added a first-run intro for the updated Dashboard experience.
+- Improved Dashboard loading and unavailable-data states.
+- Added compatibility handling for newer DOCSight backend data and signal-family metrics.
+
+### Signal health and DOCSIS metrics
+
+- Added OFDMA-aware signal handling across Dashboard, widgets, and watchOS surfaces.
+- Separated downstream and upstream health into clearer DOCSIS signal families instead of relying only on broad aggregate values.
+- Improved threshold handling for family-specific signal cards.
+- Improved signal-family KPI health aggregation so one outlier channel does not always dominate the full family summary.
+- Kept critical channel context visible in KPI cards where relevant.
+- Improved modulation health handling inside signal-family summaries.
+- Updated downstream OFDM signal-quality wording from SNR to MER where applicable.
+- Improved handling of active/evaluable channel averages for signal-family KPIs.
+- Added clearer metric explanations for the new Dashboard signal cards.
+
+### Trends and charts
+
+- Updated focused trend views for the new family-specific signal metrics.
+- Dashboard KPI taps now open the matching family-specific chart instead of older aggregate trend charts.
+- Added focused trend handling for the new signal families and errors chart.
+- Improved chart inspection styling and tooltip behavior.
+- Improved chart presentation in Dashboard sheets.
+- Added support for observed range markers and metric-specific health coloring.
+- Kept family-specific trends semantically separate from older aggregate trend data.
+
+### Navigation
+
+- Simplified the main tab bar to focus on:
+  - Dashboard
+  - Tools
+  - Documentation
+  - Settings
+- Added a Tools hub for secondary analysis and utility views:
+  - Correlation
+  - Segment Utilization
+  - Comparison
+  - BQM
+  - Smokeping
+  - Snapshots
+- Added a Documentation hub for documentation and export workflows:
+  - Journal
+  - Incidents
+  - Complaint
+  - Export
+  - Help
+- Moved many secondary workflows behind Dashboard cards and hub navigation to reduce tab bar clutter.
+- Updated deep-link routing so old and new destinations resolve into the new navigation structure where possible.
+- Improved Dashboard entry behavior for notification and widget-driven routes.
+
+### Widgets
+
+- Refreshed widgets with native overview layouts and updated signal-health presentation.
+- Added configurable Dashboard metrics for widget surfaces.
+- Added medium and large status summaries with signal charts and observed ranges.
+- Added OFDMA-aware widget metric handling.
+- Improved widget range bars, health colors, and signal status presentation.
+- Updated widget data handling for newer DOCSight signal-family metrics.
+
+### Apple Watch
+
+- Refreshed the Apple Watch Dashboard with updated signal metrics and compact KPI cards.
+- Added clearer watchOS signal-health summaries using the newer DOCSight family metrics.
+- Improved watchOS trend data handling and metric-specific health states.
+- Added Dashboard-style chart drilldowns from Watch signal cards.
+- Improved Watch Dashboard layout, signal card behavior, and events presentation.
+- Added OFDMA-aware signal handling on watchOS.
+- Improved consistency between iOS Dashboard, widgets, and watchOS signal surfaces.
+
+### Events, monitor, and diagnostics
+
+- Improved recent event handling and unread event counts.
+- Improved acknowledgement behavior after marking events as read.
+- Improved event grouping and detail navigation.
+- Updated monitor-related Dashboard surfaces.
+- Improved connection monitor access from Dashboard cards.
+- Kept BQM, Smokeping, correlation, snapshots, export, journal, incidents, and complaint workflows available through the new Tools and Documentation hubs.
+
+### Settings and permissions
+
+- Added Dashboard appearance controls for the new Dashboard presentation.
+- Added a configurable last-seen marker setting for mini charts.
+- Changed notification-related permission flow to be tied more closely to enabling notification-backed features.
+- Changed Live Activity auto-start behavior so new users explicitly opt in, while existing enabled settings remain preserved.
+- Improved settings persistence and Dashboard preview behavior.
+
+### Compatibility
+
+- DOCSIOS 1.4 is built around newer DOCSight signal-family metrics.
+- Full functionality requires DOCSight backend v2026-05-27.1 or newer.
+- Older backend versions may not provide all required Dashboard metrics, signal-family trend values, or widget/watchOS data.
+- The app includes compatibility checks and fallback/error states for unsupported backend data.
+
+### Testing and reliability
+
+- Added broader regression coverage for:
+  - Dashboard
+  - Dashboard appearance modes
+  - signal-family KPI cards
+  - widgets
+  - Apple Watch Dashboard
+  - navigation and deep links
+  - chart rendering
+  - screenshot flows
+- Improved source-level tests around signal-family metric handling, widget data, and Dashboard routing.
+- Added/updated screenshot automation coverage for iPhone, iPad, and watchOS surfaces.
+
+## 1.3 (Build 147) - 2026-05-16
 
 ### Apple Watch
 
